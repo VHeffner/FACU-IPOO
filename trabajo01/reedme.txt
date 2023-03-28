@@ -1,0 +1,53 @@
+1)
+OBJETO: Se trata de un ente abstracto usado en programación 
+que permite separar los diferentes componentes de un programa,
+simplificando así su elaboración, depuración y posteriores mejoras.
+
+
+CLASE: es un elemento de la programación orientada a 
+objetos que actúa como una plantilla 
+y va a definir las características y
+comportamientos de una entidad.
+La clase va a ser como un molde a 
+partir del cual vamos a poder definir entidades
+
+
+METODO: se le llama a un bloque de código
+que tiene definido en su interior un conjunto de instrucciones,
+estas instrucciones realizan una determinada tarea
+
+
+ATRIBUTO: son una construcción de programación de
+que permite que un objeto conocido como atributo 
+esté asociado a un tipo u otro elemento de programa.
+
+2) 
+3)
+- Mouse (C)
+-televisor(C)
+-darCanalActual(M)
+-mover (M)
+-fechaNacimiento(A)
+-encender(M)
+-persona(C)
+-darHoraActual(M)
+-irCanalTv(M)
+-Inalambrico(A)
+-ponerHora(M)
+-documento(C)
+-darPosicionActual(M)
+
+
+4)
+    CELULAR:boton, pantalla, entradaUsb,camara, 
+    COMPUTADORA:
+    PERSONAS: edad, sexo.
+
+5)
+    implementando la 
+    CLASE:persona.
+    ATRIBUTOS:tredad, altura, sexo, dni.
+    METODOS:
+
+
+
