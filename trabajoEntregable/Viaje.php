@@ -33,9 +33,9 @@ class Viaje
     public function getArray_pasajeros()
     {
         $info_pasajeros="";
-        for ($i=0; $i <count($array_pasajeros) ; $i++) { 
-            $info_pasajeros=$info_pasajeros+"el pasajero en la posicion: ",$i;
-            $info_pasajeros=$info_pasajeros+implode(" ,",$array_pasajeros[$i]),"\n";//el (implode) nos dara cada elemento del arrego en forma de string separado por lo que le digamois
+        for ($i=0; $i <count($this->array_pasajeros) ; $i++) { 
+            $info_pasajeros=$info_pasajeros+"el pasajero en la posicion: ".$i;
+            $info_pasajeros=$info_pasajeros.implode(" ,",$this->array_pasajeros[$i])."\n";//el (implode) nos dara cada elemento del arrego en forma de string separado por lo que le digamois
         }
         return $info_pasajeros;
     }
@@ -79,9 +79,9 @@ class Viaje
 
     public function __toString(){
         $info_viaje="";
-        $info_viaje=$codigo_viaje+$destino+$cantidad_maxima_pasajero
-
-
+        $info_viaje=$this->codigo_viaje+$this->destino+$this->cantidad_maxima_pasajeros;
+    
+        return $info_viaje;
     }
 
 }
