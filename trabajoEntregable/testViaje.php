@@ -1,6 +1,5 @@
 <?php
 include 'Viaje.php';
-$obj_viaje = new Viaje(0211,"Neuquen",23);  // se crea un objeto viaje y se asigna a la variable viaje
 //M  E N U 
 
         do {
@@ -30,6 +29,29 @@ $obj_viaje = new Viaje(0211,"Neuquen",23);  // se crea un objeto viaje y se asig
                 default:
                     echo"ERRROR";
                     break;
+            }
+        }
+        function carga_informacion_viaje(){
+            echo"Ingrese codigo de viaje: "
+            $codigo_viaje=readline();
+            echo"Ingrese destino de viaje: ";
+            $destino=readline();
+            echo"Ingrese cantidad maxima de pasajeros";
+            $cantidad_maxima_pasajeros=readline();
+            echo"Ingrese cantidad Total de pasajeros";
+            $total_pasajeros=readline();
+            $obj_viaje=new Viaje($codigo_viaje,$destino,$cantidad_maxima_pasajeros);
+            info_pasajero($total_pasajeros,$obj_viaje);
+        }
+        function info_pasajero($total_pasajeros,$obj_viaje){
+            for ($i=0; $i <$total_pasajeros ; $i++) { 
+                echo"Ingrese Nombre: \n";
+                $nombre=readline();
+                echo"Ingrese Apellido: \n";
+                $apellido=readline();
+                echo"Ingrese Dni: \n";
+                $dni=readline();
+                $obj_viaje->setAgregar_pasajero($nombre, $apellido, $dni);
             }
         }
 
