@@ -32,7 +32,12 @@ class Viaje
     }
     public function getArray_pasajeros()
     {
-        return $this->array_pasajeros;
+        $info_pasajeros="";
+        for ($i=0; $i <count($array_pasajeros) ; $i++) { 
+            $info_pasajeros=$info_pasajeros+"el pasajero en la posicion: ",$i;
+            $info_pasajeros=$info_pasajeros+implode(" ,",$array_pasajeros[$i]),"\n";//el (implode) nos dara cada elemento del arrego en forma de string separado por lo que le digamois
+        }
+        return $info_pasajeros;
     }
 
     //--m o d i f i c a d o r --
@@ -54,6 +59,7 @@ class Viaje
 
     //--propia del tipo--
     // esto tienen sentido dentro de la clase viaje ya que necesitamos una forma de agregar pasajeros al arreglo
+    
     public function setAgregar_pasajero($nombre, $apellido, $dni)
     {
 
@@ -70,4 +76,12 @@ class Viaje
         $array_carga_informacion_pasajero = ["nombre" => $nombre, "apellido" => $apellido, "dni" => $dni];
         $array_pasajeros[$indice] = $array_carga_informacion_pasajero;
     }
+
+    public function __toString(){
+        $info_viaje="";
+        $info_viaje=$codigo_viaje+$destino+$cantidad_maxima_pasajero
+
+
+    }
+
 }
