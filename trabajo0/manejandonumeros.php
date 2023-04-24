@@ -2,7 +2,7 @@
 
 //E J E R C I C I O   0 1
 
-function obtenerFactorial ($numero){
+/* function obtenerFactorial ($numero){
     $factorial=1;
     for($i=1; $i<=$numero; $i++){
         $factorial=$factorial*$i;
@@ -134,4 +134,4 @@ for ($i=0; $i < 3; $i++) {
     $arrayA[$i] = $i;
     $arrayB[$i] = $i;
 }
-unionArray($arrayA,$arrayB);
+unionArray($arrayA,$arrayB); */

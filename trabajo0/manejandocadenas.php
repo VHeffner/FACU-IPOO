@@ -7,25 +7,25 @@
 *  Podemos hacer uso de la función str_replace() para reemplazar los caracteres no deseados por una cadena vacía,
 *   de esta forma solo quedan las letras en la cadena y podemos aplicar la función strlen() para conocer su longitud.**/
 
-function cadenaCaracteres($cadena){
+/* function cadenaCaracteres($cadena){
 $cadena = 'Hola mundo.';
 $cadena_sin_punto = substr($cadena, 0, -1); // Eliminamos el último caracter, el punto
 $cadena_sin_espacios = str_replace(' ', '', $cadena_sin_punto); // Eliminamos los espacios en blanco
 $cantidad_letras = strlen($cadena_sin_espacios);
 return $cantidad_letras;
-}
+} */
 
 //Dado un texto terminado en / y un caracter, determinar cuántas veces aparece ese caracter en la cadena
 
 /**Se puede utilizar la función count_chars() en PHP para contar el número de veces que aparece un carácter en una cadena.
  * Por ejemplo, si $texto es la cadena dada y $caracter es el carácter dado,
  * se puede usar lo siguiente para contar el número de veces que aparece el carácter: */
-function 
+/* function 
 $texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit/";
 $caracter = "a";
 $num_veces = substr_count($texto, $caracter);
 echo "El carácter '" . $caracter . "' aparece " . $num_veces . " veces en el texto.";
-
+ */
 // Dada 2 cadenas cadena1 y cadena2 retornar verdadero si cadena2 se encuentra en cadena1 y falso en caso contrario.
 
 /**La función strpos() en PHP devuelve la posición de la primera ocurrencia de una subcadena dentro de una cadena dada.
@@ -48,7 +48,7 @@ if (strpos($cadena1, $cadena2) !== false) {
 //Dada una cadena retornar su longitud sin utilizar la función count de PHP
 
 /**Puede utilizar un bucle para recorrer la cadena y contar los caracteres manualmente:**/
-
+/* 
 php
 Copy code
 function longitud_cadena($cadena) {
@@ -57,10 +57,10 @@ function longitud_cadena($cadena) {
         $longitud++;
     }
     return $longitud;
-}
+} */
 
-$cadena = "Hola mundo";
-echo longitud_cadena($cadena); // salida: 10
+/* $cadena = "Hola mundo";
+echo longitud_cadena($cadena); */ // salida: 10
 
 /**El bucle va sumando 1 a la variable $longitud en cada iteración hasta que no haya más caracteres en la cadena (cuando $cadena[$i] sea null). */
 
