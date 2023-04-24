@@ -59,7 +59,12 @@ class Bicicleta{
         return $this->activa;
     }
     public function setActiva($activa){
-        $this->activa;
+        $this->activa=$activa;
+    }
+
+    //metodo de lectura
+    public function __toString(){
+        return "n\Codigo: ".$this->codigo."n\Costo: ".}$this
     }
 
 }
