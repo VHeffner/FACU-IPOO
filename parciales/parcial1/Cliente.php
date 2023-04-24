@@ -9,7 +9,7 @@ class Cliente
 
 
     //METODO CONSTRUCTOR
-    public function __constructor($nombre, $apellido, $alta, $tipo_documento, $numero_documento)
+    public function __construct($nombre, $apellido, $alta, $tipo_documento, $numero_documento)
     {
         $this->nombre = $nombre;
         $this->apellido = $apellido;
