@@ -1,0 +1,7 @@
+9: Falso. Falta pasar por parametro $colItems.
+10: Falso. getter no se pasan parametros, setters si se pasan parametros.
+11: Falso. No se hace echo en el toString, se devuelve un toString
+12: Verdadero. Es correcta la implementacion, falta modularizar
+13: Desarrollo en Venta.php
+21: La logica esta bien. El codigo no se ve si es que hay.
+22: TERMINAR
